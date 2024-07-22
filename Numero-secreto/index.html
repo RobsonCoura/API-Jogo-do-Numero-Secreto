@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags para definir o conjunto de caracteres e ajustar a viewport para dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Pré-conexão para otimizar o carregamento de fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Link para as fontes utilizadas no site -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Título da página -->
+    <title>JS Game</title>
+</head>
+
+<body>
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Conteúdo do container -->
+        <div class="container__conteudo">
+            <!-- Imagem do robô mergulhador -->
+            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
+
+            <!-- Informações adicionais dentro do container -->
+            <div class="container__informacoes">
+                <!-- Ícone de troféu -->
+                <img src="./img/trophy.png" alt="ícone de um troféu" />
+
+                <!-- Texto exibido na página -->
+                <div class="container__texto">
+                    <h1>Você <span class="container__texto-azul">acertou!</span></h1>
+                    <h2>Você descobriu o número secreto!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusão do arquivo JavaScript externo -->
+    <script src="app.js" defer></script>
+</body>
+
+</html>
