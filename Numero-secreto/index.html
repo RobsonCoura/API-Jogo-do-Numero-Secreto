@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- Meta tags para definir o conjunto de caracteres e ajustar a viewport para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
 
     <!-- Pré-conexão para otimizar o carregamento de fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,20 +28,27 @@
     <div class="container">
         <!-- Conteúdo do container -->
         <div class="container__conteudo">
-            <!-- Imagem do robô mergulhador -->
-            <img src="./img/robot.png" alt="robô mergulhador" class="container__imagem-robo" />
-
             <!-- Informações adicionais dentro do container -->
             <div class="container__informacoes">
-                <!-- Ícone de troféu -->
-                <img src="./img/trophy.png" alt="ícone de um troféu" />
-
-                <!-- Texto exibido na página -->
+                <!-- Texto do container -->
                 <div class="container__texto">
-                    <h1>Você <span class="container__texto-azul">acertou!</span></h1>
-                    <h2>Você descobriu o número secreto!</h2>
+                    <!-- Título principal da página ou seção -->
+                    <h1></h1>
+                    <!-- Parágrafo de texto dentro do container -->
+                    <p class="texto__paragrafo"></p>
+                </div>
+                <!-- Input numérico para entrada de valores de 1 a 10 -->
+                <input type="number" min="1" max="10" class="container__input">
+                <!-- Container para os botões de interação -->
+                <div class="chute container__botoes">
+                    <!-- Botão para verificar o chute do usuário -->
+                    <button onclick="verificarChute()" class="container__botao">Chutar</button>
+                    <!-- Botão para reiniciar o jogo, desabilitado inicialmente -->
+                    <button onclick="" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
                 </div>
             </div>
+            <!-- Imagem de uma pessoa olhando para a esquerda -->
+            <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
         </div>
     </div>
 
