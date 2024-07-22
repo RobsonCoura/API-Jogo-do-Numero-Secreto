@@ -1,0 +1,15 @@
+/* Estilos globais aplicados a todos os elementos */
+* {
+    background-color: black;
+    /* Define a cor de fundo preta */
+    background-image: url('./img/bg.png');
+    /* Define a imagem de fundo */
+    background-repeat: no-repeat;
+    /* Não repete a imagem de fundo */
+    background-size: cover;
+    /* Faz com que a imagem de fundo cubra todo o elemento */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    opacity: 0.4;
+    /* Define a opacidade para 0.4, tornando todos os elementos um pouco transparentes */
+}
