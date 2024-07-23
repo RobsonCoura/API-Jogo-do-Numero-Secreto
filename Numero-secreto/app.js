@@ -1,11 +1,15 @@
-let titulo = document.querySelector('h1'); // Obtém a referência do primeiro elemento <h1> encontrado no documento
+// Função que exibe texto em um elemento HTML específico
+function exibirTextoNaTela(tag, texto) {
+    // Seleciona o primeiro elemento que corresponde ao seletor CSS fornecido (tag)
+    let campo = document.querySelector(tag);
+    // Define o conteúdo HTML do elemento selecionado para o texto fornecido
+    campo.innerHTML = texto;
+}
 
-titulo.innerHTML = 'Jogo do número secreto'; // Isso altera o título da página para "Jogo do número secreto"
-
-
-let paragrafo = document.querySelector('p'); // Obtém a referência do primeiro elemento <p> encontrado no documento
-
-paragrafo.innerHTML = 'Escolha um número entre 1 e 10'; // Isso define a descrição ou instrução para o usuário, indicando a faixa de números válidos
+// Chama a função para exibir o texto 'Jogo do número secreto' no primeiro elemento <h1> encontrado na página
+exibirTextoNaTela('h1', 'Jogo do número secreto');
+// Chama a função para exibir o texto 'Escolha um número entre 1 e 10' no primeiro elemento <p> encontrado na página
+exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 
 
 function verificarChute() {
