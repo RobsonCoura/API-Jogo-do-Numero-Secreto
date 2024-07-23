@@ -1,3 +1,5 @@
+
+// Gera um número aleatório entre 1 e 10 e o atribui à variável numeroSecreto
 let numeroSecreto = gerarNumeroAleatorio();
 
 // Função que exibe texto em um elemento HTML específico
@@ -17,6 +19,7 @@ function verificarChute() {
     console.log(numeroSecreto)
 }
 
+// Função que gera um número aleatório
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 10 + 1);
 }
