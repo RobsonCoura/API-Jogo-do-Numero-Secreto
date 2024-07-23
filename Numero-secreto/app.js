@@ -1,3 +1,5 @@
+let numeroSecreto = gerarNumeroAleatorio();
+
 // Função que exibe texto em um elemento HTML específico
 function exibirTextoNaTela(tag, texto) {
     // Seleciona o primeiro elemento que corresponde ao seletor CSS fornecido (tag)
@@ -11,7 +13,10 @@ exibirTextoNaTela('h1', 'Jogo do número secreto');
 // Chama a função para exibir o texto 'Escolha um número entre 1 e 10' no primeiro elemento <p> encontrado na página
 exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 
-
 function verificarChute() {
-    console.log('O botao foi clicado')
+    console.log(numeroSecreto)
+}
+
+function gerarNumeroAleatorio() {
+    return parseInt(Math.random() * 10 + 1);
 }
